@@ -1,4 +1,4 @@
-import Loading from 'components/Loader/Loading';
+// import Loading from 'components/Loader/Loading';
 import { TitleHomePage, WrapHomePage } from './Page.styled';
 
 import React from 'react';
