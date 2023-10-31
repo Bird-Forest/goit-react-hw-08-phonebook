@@ -1,15 +1,15 @@
 import React from 'react';
-import { FilterInput, FilterTitle, FilterWrap } from './Filter.styled';
+import { FilterInput, FilterWrap } from './Filter.styled';
 import { useDispatch } from 'react-redux';
-import { setFilter } from 'redux/filterSlice';
-// import { selectFilter } from 'redux/selectors';
+import { setFilter } from 'redux/contacts/filterSlice';
+import { RiUserSearchFill } from 'react-icons/ri';
 
 export default function Filter() {
   const dispatch = useDispatch();
 
   return (
     <FilterWrap>
-      <FilterTitle>Find contacts by name</FilterTitle>
+      <RiUserSearchFill className="icon-search" />
       <FilterInput
         type="text"
         onInput={event => dispatch(setFilter(event.target.value.toLowerCase()))}
@@ -17,4 +17,3 @@ export default function Filter() {
     </FilterWrap>
   );
 }
-// event.target.value.toLowerCase();

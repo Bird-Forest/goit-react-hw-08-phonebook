@@ -1,56 +1,76 @@
-import { styled } from 'styled-components';
+import styled from 'styled-components';
+
 export const Form = styled.form`
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 8px;
+  min-width: 420px;
+  margin-top: 80px;
+  padding: 8px;
+`;
+export const MarkField = styled.label`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  width: 480px;
-  height: 200px;
-`;
-export const MarkField = styled.span`
-  font-size: 24px;
-  font-weight: 700;
-  margin-bottom: 5px;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #7e57c2;
+  padding: 0;
+  margin: 0;
 `;
 export const ContactName = styled.input`
-  display: block;
-  width: 440px;
-  height: 80px;
+  width: 250px;
+  height: 30px;
   font-size: 16px;
-  font-weight: 400;
-  border-radius: 5px;
-  outline: rgb(255, 217, 25);
-  border: 2px rgb(255, 217, 25) solid;
-  padding: 0 16px;
-  margin-bottom: 5px;
+  font-weight: 700;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #7e57c2;
+  color: #673ab7;
+  padding: 0 8px;
+  &:hover,
+  :focus {
+    background-color: #b39ddb;
+    border: 1px solid #b39ddb;
+  }
 `;
 export const ContactNumber = styled.input`
-  display: block;
-  width: 440px;
-  height: 80px;
+  width: 150px;
+  height: 30px;
   font-size: 16px;
-  font-weight: 400;
-  border-radius: 5px;
-  outline: rgb(255, 217, 25);
-  border: 2px rgb(255, 217, 25) solid;
-  padding: 0 16px;
-  margin-bottom: 15px;
+  font-weight: 700;
+  border-radius: 4px;
+  outline: none;
+  color: #673ab7;
+  border: 1px solid #7e57c2;
+  padding: 0 8px;
+  cursor: pointer;
+  &:hover,
+  :focus {
+    background-color: #b39ddb;
+    border: 1px solid #b39ddb;
+  }
 `;
 export const BtnAdd = styled.button`
   display: inline-block;
-  font-size: 16px;
-  font-weight: 700;
-  width: 480px;
-  height: 80px;
-  background-color: rgb(255, 221, 51);
-  border: 2px rgb(255, 187, 51) solid;
-  border-radius: 5px;
+  background-color: #ede7f6;
+  width: 30px;
+  height: 30px;
+  color: white;
+  outline: none;
+  border: none;
   cursor: pointer;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 15px;
-  &:hover,
-  &:focus {
-    background-color: rgb(255, 128, 0);
+  padding: 0;
+  margin: 0;
+  .icon-add {
+    width: 30px;
+    height: 30px;
+    fill: #673ab7;
+    &:hover,
+    :focus {
+      fill: #7c4dff;
+    }
   }
 `;

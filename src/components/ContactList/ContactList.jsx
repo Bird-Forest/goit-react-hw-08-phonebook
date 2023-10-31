@@ -2,13 +2,15 @@ import React, { useEffect } from 'react';
 import { Wrap } from './ContactList.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import Contact from 'components/Contact/Contact';
-import { fetchContacts } from 'redux/operations';
+import { fetchContacts } from 'redux/contacts/operations';
 import {
   selectError,
   selectIsLoading,
   selectVisibleContacts,
-} from 'redux/selectors';
+} from 'redux/contacts/selectors';
 import { nanoid } from '@reduxjs/toolkit';
+import { TfiFaceSad } from 'react-icons/tfi';
+import Loading from 'components/Loader/Loading';
 
 export default function ContactList() {
   const dispatch = useDispatch();
@@ -19,17 +21,19 @@ export default function ContactList() {
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
-  // console.log(arrContacts);
-  const showArr = Array.isArray(arrContacts) && arrContacts.length;
+  const showArr = Array.isArray(arrContacts) && arrContacts.length !== 0;
 
   return (
     <Wrap>
-      {isLoading && <p>Loading tasks...</p>}
+      {isLoading && <Loading />}
       {error && <p>{error}</p>}
-      {showArr &&
+      {showArr ? (
         arrContacts.map(contact => {
           return <Contact contact={contact} key={nanoid()} />;
-        })}
+        })
+      ) : (
+        <TfiFaceSad className="icon-sad" />
+      )}
     </Wrap>
   );
 }

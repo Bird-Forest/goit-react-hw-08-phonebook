@@ -1,30 +1,26 @@
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 export const FilterWrap = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 480px;
+  gap: 4px;
   padding: 0;
   margin: 0;
-`;
-export const FilterTitle = styled.p`
-  display: block;
-  font-size: 24px;
-  font-weight: 700;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 10px;
+  .icon-search {
+    width: 30px;
+    height: 30px;
+    fill: #ffeb3b;
+  }
 `;
 export const FilterInput = styled.input`
-  display: inline-block;
-  width: 440px;
+  width: 150px;
   height: 30px;
   font-size: 16px;
-  font-weight: 400;
-  border-radius: 5px;
-  outline: rgb(255, 217, 25);
-  border: 2px rgb(255, 217, 25) solid;
-  padding: 0 16px;
-  margin-bottom: 10px;
+  font-weight: 700;
+  border-radius: 4px;
+  outline: none;
+  color: #ff6d00;
+  border: 1px solid #ff6d00;
+  padding: 0 8px;
+  cursor: pointer;
 `;

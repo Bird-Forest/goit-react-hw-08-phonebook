@@ -1,13 +1,13 @@
-// import { nanoid } from '@reduxjs/toolkit';
 import {
   Form,
-  MarkField,
   ContactName,
   ContactNumber,
   BtnAdd,
+  MarkField,
 } from './ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/operations';
+import { addContact } from 'redux/contacts/operations';
+import { RiUserAddFill } from 'react-icons/ri';
 
 export default function ContactForm() {
   const dispatch = useDispatch();
@@ -18,9 +18,9 @@ export default function ContactForm() {
 
     const newUser = {
       name: event.target.elements.name.value,
-      phone: event.target.elements.phone.value,
+      number: event.target.elements.number.value,
     };
-
+    console.log(newUser);
     const hasContact = contacts.some(
       contact => contact.name === event.target.elements.name.value
     );
@@ -31,18 +31,23 @@ export default function ContactForm() {
     }
     dispatch(addContact(newUser));
     event.target.reset();
+    // console.log(newUser);
   };
   return (
-    <div>
+    <>
       <Form onSubmit={handleSubmit}>
-        <MarkField>Name</MarkField>
-        <ContactName type="text" name="name" required />
-        <MarkField>Number</MarkField>
-        <ContactNumber type="tel" name="phone" required />
-        <BtnAdd type="submit">Add contact</BtnAdd>
+        <MarkField>
+          Name
+          <ContactName type="text" name="name" required />
+        </MarkField>
+        <MarkField>
+          Number
+          <ContactNumber type="tel" name="number" required />
+        </MarkField>
+        <BtnAdd type="submit">
+          <RiUserAddFill className="icon-add" />
+        </BtnAdd>
       </Form>
-    </div>
+    </>
   );
 }
-
-// JSON.stringify(Math.floor(Math.random() * 100))

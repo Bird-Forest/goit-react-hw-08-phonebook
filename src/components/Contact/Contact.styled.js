@@ -1,55 +1,54 @@
-import { styled } from 'styled-components';
+import styled from 'styled-components';
 
 export const ContactWrap = styled.li`
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  width: 480px;
-  height: 50px;
-  gap: 10px;
-  /* margin-right: auto;
-  margin-right: auto; */
-  margin-bottom: 10px;
-`;
-export const ContactAvatar = styled.img`
-  display: block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  object-fit: cover;
+  align-items: flex-end;
+  min-width: 420px;
+  gap: 8px;
 `;
 export const ContactName = styled.p`
-  width: 200px;
-  height: 50px;
-  font-size: 20px;
-  font-weight: 500;
+  width: 250px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #7e57c2;
+  color: #673ab7;
+  padding: 0 8px;
   margin: 0;
-  padding: 0;
 `;
 export const ContactNumber = styled.p`
-  width: 160px;
-  font-size: 20px;
-  font-weight: 500;
+  width: 150px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 4px;
+  outline: none;
+  color: #673ab7;
+  border: 1px solid #7e57c2;
+  padding: 0 8px;
   margin: 0;
-  padding: 0;
 `;
 export const BtnDelete = styled.button`
   display: inline-block;
-  align-items: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-
-  background-color: rgb(255, 221, 51);
-  border: 2px rgb(255, 187, 51) solid;
+  background-color: #ede7f6;
+  width: 30px;
+  height: 30px;
+  color: white;
+  outline: none;
+  border: none;
   cursor: pointer;
-  padding: 4px;
-  .icon {
-    width: 20px;
-    height: 20px;
-  }
-  &:hover,
-  &:focus {
-    background-color: rgb(255, 128, 0);
+  padding: 0;
+  margin: 0;
+  .icon-delete {
+    width: 30px;
+    height: 30px;
+    fill: #673ab7;
+    &:hover,
+    :focus {
+      fill: #7c4dff;
+    }
   }
 `;

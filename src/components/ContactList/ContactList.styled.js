@@ -1,10 +1,14 @@
-import { styled } from 'styled-components';
+import styled from 'styled-components';
+
 export const Wrap = styled.ul`
   display: flex;
   flex-direction: column;
-  width: 480px;
+  gap: 8px;
   padding: 0;
   margin: 0;
-  /* margin-right: auto;
-  margin-right: auto; */
+  .icon-sad {
+    width: 60px;
+    height: 60px;
+    fill: #673ab7;
+  }
 `;
