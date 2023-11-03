@@ -2,12 +2,20 @@ import styled from 'styled-components';
 
 export const Form = styled.form`
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: flex-end;
-  gap: 8px;
-  min-width: 420px;
-  margin-top: 80px;
-  padding: 8px;
+  gap: 4px;
+  min-width: 360px;
+  /* margin-top: 100px; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  padding: 8px 0;
+  margin: 0 auto;
+  @media screen and (min-width: 800px) {
+    width: 800px;
+    /* margin-top: 60px; */
+  }
 `;
 export const MarkField = styled.label`
   display: flex;
@@ -21,7 +29,7 @@ export const MarkField = styled.label`
   margin: 0;
 `;
 export const ContactName = styled.input`
-  width: 250px;
+  width: 280px;
   height: 30px;
   font-size: 16px;
   font-weight: 700;
@@ -36,8 +44,15 @@ export const ContactName = styled.input`
     border: 1px solid #b39ddb;
   }
 `;
+export const WrapNumber = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 8px;
+  width: 240px;
+`;
 export const ContactNumber = styled.input`
-  width: 150px;
+  width: 180px;
   height: 30px;
   font-size: 16px;
   font-weight: 700;

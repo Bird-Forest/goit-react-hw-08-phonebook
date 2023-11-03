@@ -1,8 +1,9 @@
 import { useAuth } from 'hooks';
-import { Navigation } from 'components/Navigation/Navigation';
+import { HeaderLeft, WrapHeader } from './AppBar.styled';
+// import { NavLink, Navigate } from 'react-router-dom';
 import { UserMenu } from 'components/userMenu/UserMenu';
 import { AuthNav } from 'components/AuthNav/AuthNav';
-import { Header, WrapHeader } from './AppBar.styled';
+import { Navigation } from 'components/Navigation/Navigation';
 import { NavLink } from 'react-router-dom';
 
 export const AppBar = () => {
@@ -10,13 +11,13 @@ export const AppBar = () => {
 
   return (
     <WrapHeader>
-      <Header>
+      <HeaderLeft>
         <NavLink to="/" className="navigate-home">
           Home
         </NavLink>
-        <Navigation />
-        {isLoggedIn ? <UserMenu /> : <AuthNav />}
-      </Header>
+      </HeaderLeft>
+      <Navigation />
+      {isLoggedIn ? <UserMenu /> : <AuthNav />}
     </WrapHeader>
   );
 };

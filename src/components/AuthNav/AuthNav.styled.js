@@ -4,10 +4,10 @@ export const WrapAuthNaw = styled.div`
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  min-width: 360px;
+  min-width: 200px;
   gap: 10px;
   margin: 0;
-  padding: 0;
+  padding: 8px 16px;
   .navigate-up {
     font-family: 'Prompt', sans-serif;
     display: block;
@@ -31,5 +31,9 @@ export const WrapAuthNaw = styled.div`
     &.active {
       color: #64dd17;
     }
+  }
+  @media screen and (min-width: 800px) {
+    /* width: 800px; */
+    padding: 8px 20px;
   }
 `;

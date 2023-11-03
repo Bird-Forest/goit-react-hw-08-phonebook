@@ -19,6 +19,7 @@ export default function ContactList() {
   const arrContacts = useSelector(selectVisibleContacts);
 
   useEffect(() => {
+    // is(!arrContacts) return;
     dispatch(fetchContacts());
   }, [dispatch]);
   const showArr = Array.isArray(arrContacts) && arrContacts.length !== 0;

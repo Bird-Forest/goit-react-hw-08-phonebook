@@ -1,29 +1,44 @@
 import styled from 'styled-components';
 
-export const WrapHeader = styled.div`
+export const WrapHeader = styled.header`
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
+  /* width: 100%;  */
   background-color: #ff6d00;
-  width: 100%;
-  height: 60px;
+  min-width: 360px;
+  max-height: 100px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* margin: 0 auto; */
+  margin: 0 auto;
+  /* margin: 0; */
   padding: 0;
   box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.75);
+
+  @media screen and (min-width: 800px) {
+    width: 800px;
+    height: 60px;
+  }
 `;
 
-export const Header = styled.header`
+export const HeaderLeft = styled.div`
   display: flex;
-  gap: 10px;
-  min-width: 420px;
-  justify-content: space-between;
+  /* gap: 10px; */
+  width: 80px;
+  justify-content: flex-start;
   align-items: center;
+  /* background-color: #ff6d00; */
   padding: 8px 16px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   .navigate-home {
     font-family: 'Prompt', sans-serif;
     display: block;
@@ -35,5 +50,23 @@ export const Header = styled.header`
     &.active {
       color: #ffeb3b;
     }
+  }
+
+  @media screen and (min-width: 800px) {
+    /* width: 800px; */
+    padding: 8px 20px;
+  }
+`;
+export const HeaderRight = styled.div`
+  display: flex;
+  gap: 10px;
+  min-width: 360px;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #ff6d00;
+  padding: 8px 16px;
+  @media screen and (min-width: 800px) {
+    /* width: 800px; */
+    padding: 8px 20px;
   }
 `;

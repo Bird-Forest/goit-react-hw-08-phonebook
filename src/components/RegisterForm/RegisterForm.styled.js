@@ -6,16 +6,19 @@ export const RegisterFormWrap = styled.form`
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  width: 320px;
+  max-width: 320px;
   height: 280px;
   gap: 15px;
   background-color: white;
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  margin: 0 auto;
+  /* margin-right: auto;
+  margin-bottom: 20px; */
   padding: 10px;
   box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.75);
-  margin: 0 auto;
+
   .label-form {
     display: flex;
     flex-direction: column;

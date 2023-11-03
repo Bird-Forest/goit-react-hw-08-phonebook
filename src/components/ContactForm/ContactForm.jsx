@@ -4,6 +4,7 @@ import {
   ContactNumber,
   BtnAdd,
   MarkField,
+  WrapNumber,
 } from './ContactForm.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contacts/operations';
@@ -40,13 +41,15 @@ export default function ContactForm() {
           Name
           <ContactName type="text" name="name" required />
         </MarkField>
-        <MarkField>
-          Number
-          <ContactNumber type="tel" name="number" required />
-        </MarkField>
-        <BtnAdd type="submit">
-          <RiUserAddFill className="icon-add" />
-        </BtnAdd>
+        <WrapNumber>
+          <MarkField>
+            Number
+            <ContactNumber type="tel" name="number" required />
+          </MarkField>
+          <BtnAdd type="submit">
+            <RiUserAddFill className="icon-add" />
+          </BtnAdd>
+        </WrapNumber>
       </Form>
     </>
   );

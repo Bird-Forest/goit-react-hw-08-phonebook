@@ -8,10 +8,12 @@ export const Navigation = () => {
 
   return (
     <WrapNav>
-      {isLoggedIn && (
+      {isLoggedIn ? (
         <NavLink to="/contacts" className="navigate">
           Contacts
         </NavLink>
+      ) : (
+        <h3 className="title">My contacts</h3>
       )}
     </WrapNav>
   );
