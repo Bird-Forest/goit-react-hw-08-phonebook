@@ -4,7 +4,7 @@ export const ContactWrap = styled.li`
   display: flex;
   justify-content: flex-start;
   align-items: flex-end;
-  min-width: 420px;
+  min-width: 360px;
   gap: 8px;
 `;
 export const ContactName = styled.p`

@@ -73,14 +73,14 @@ export const WrapContactsPage = styled.div`
 export const TitleContactsPage = styled.div`
   display: flex;
   min-width: 360px;
-  height: 100px;
+  max-height: 100px;
   font-size: 4px;
   padding: 0;
   margin: 0 auto 68px auto;
   color: #ede7f6;
-  @media screen and (min-width: 800px) {
+  @media screen and (min-width: 600px) {
     width: 800px;
-    height: 40px;
-    margin: 0 auto;
+    /* height: 40px; */
+    margin: 0 auto 32px auto;
   }
 `;
