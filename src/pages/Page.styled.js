@@ -13,12 +13,6 @@ export const WrapHomePage = styled.div`
     width: 800px;
   }
 `;
-// export const TitleHomePage = styled.h2`
-//   margin-top: 200px;
-//   font-family: Rubik Moonrock;
-//   font-size: 80px;
-//   color: #e0f7fa;
-// `;
 
 export const WrapRegisterPage = styled.div`
   display: flex;
@@ -28,12 +22,10 @@ export const WrapRegisterPage = styled.div`
   width: 100%;
   height: 100%;
   background-color: #e1f5fe;
-  /* gap: 20px; */
   margin: 0;
 `;
 export const TitleRegisterPage = styled.h2`
   display: block;
-  /* margin-bottom: 10px; */
   font-size: 24px;
   padding: 0;
   margin: 160px auto 20px auto;
@@ -47,12 +39,10 @@ export const WrapLoginPage = styled.div`
   width: 100%;
   height: 100%;
   background-color: #ccff90;
-  /* gap: 20px; */
   margin: 0;
 `;
 export const TitleLoginPage = styled.h2`
   display: block;
-  /* margin-bottom: 10px; */
   font-size: 24px;
   padding: 0;
   margin: 160px auto 20px auto;
@@ -67,20 +57,19 @@ export const WrapContactsPage = styled.div`
   width: 100%;
   height: 100%;
   background-color: #ede7f6;
-  gap: 20px;
+  gap: 4px;
   margin: 0;
 `;
 export const TitleContactsPage = styled.div`
   display: flex;
   min-width: 360px;
-  max-height: 100px;
-  font-size: 4px;
+  height: 40px;
+  font-size: 16px;
   padding: 0;
-  margin: 0 auto 68px auto;
-  color: #ede7f6;
+  margin: 12px auto 40px auto;
+  color: #7c4dff;
   @media screen and (min-width: 600px) {
     width: 800px;
-    /* height: 40px; */
-    margin: 0 auto 32px auto;
+    margin: 16px auto 0 auto;
   }
 `;

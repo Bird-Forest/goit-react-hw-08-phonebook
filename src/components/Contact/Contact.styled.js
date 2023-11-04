@@ -2,13 +2,17 @@ import styled from 'styled-components';
 
 export const ContactWrap = styled.li`
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: flex-end;
   min-width: 360px;
   gap: 8px;
+  padding: 0;
+  margin: 0;
 `;
 export const ContactName = styled.p`
-  width: 250px;
+  display: inline-block;
+  width: 280px;
   height: 30px;
   font-size: 16px;
   font-weight: 700;
@@ -17,10 +21,19 @@ export const ContactName = styled.p`
   border: 1px solid #7e57c2;
   color: #673ab7;
   padding: 0 8px;
+  margin: 0;
+`;
+export const WrapNumber = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 240px;
+  padding: 0;
   margin: 0;
 `;
 export const ContactNumber = styled.p`
-  width: 150px;
+  width: 180px;
   height: 30px;
   font-size: 16px;
   font-weight: 700;
@@ -30,6 +43,7 @@ export const ContactNumber = styled.p`
   border: 1px solid #7e57c2;
   padding: 0 8px;
   margin: 0;
+  cursor: pointer;
 `;
 export const BtnDelete = styled.button`
   display: inline-block;

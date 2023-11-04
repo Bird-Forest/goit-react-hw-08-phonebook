@@ -16,7 +16,6 @@ export const LoginForm = () => {
     );
     form.reset();
   };
-
   return (
     <LoginFormWrap onSubmit={handleSubmit} autoComplete="off">
       <label className="label-form">

@@ -11,15 +11,10 @@ export const LoginFormWrap = styled.form`
   gap: 15px;
   background-color: white;
   margin: 0 auto;
-  /* margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px; */
   padding: 10px;
   box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.75);
-
   .label-form {
     display: flex;
     flex-direction: column;

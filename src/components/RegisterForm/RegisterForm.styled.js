@@ -10,10 +10,7 @@ export const RegisterFormWrap = styled.form`
   height: 280px;
   gap: 15px;
   background-color: white;
-  /* margin-top: 50px; */
   margin: 0 auto;
-  /* margin-right: auto;
-  margin-bottom: 20px; */
   padding: 10px;
   box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 4px 7px 1px rgba(0, 0, 0, 0.75);

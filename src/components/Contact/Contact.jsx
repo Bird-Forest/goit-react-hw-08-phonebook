@@ -5,6 +5,7 @@ import {
   ContactName,
   ContactNumber,
   ContactWrap,
+  WrapNumber,
 } from './Contact.styled';
 import { useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/contacts/operations';
@@ -16,10 +17,12 @@ export default function Contact({ contact }) {
   return (
     <ContactWrap id={contact.id} key={nanoid()}>
       <ContactName>{contact.name}</ContactName>
-      <ContactNumber>{contact.number}</ContactNumber>
-      <BtnDelete type="button" onClick={handleDelete}>
-        <RiUserUnfollowFill className="icon-delete" />
-      </BtnDelete>
+      <WrapNumber>
+        <ContactNumber>{contact.number}</ContactNumber>
+        <BtnDelete type="button" onClick={handleDelete}>
+          <RiUserUnfollowFill className="icon-delete" />
+        </BtnDelete>
+      </WrapNumber>
     </ContactWrap>
   );
 }

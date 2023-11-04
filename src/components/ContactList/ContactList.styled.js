@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrap = styled.ul`
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 4px;
   padding: 0;
   margin: 0;
   .icon-sad {

@@ -33,7 +33,6 @@ export const WrapAuthNaw = styled.div`
     }
   }
   @media screen and (min-width: 800px) {
-    /* width: 800px; */
     padding: 8px 20px;
   }
 `;

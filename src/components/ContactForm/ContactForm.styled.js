@@ -7,24 +7,16 @@ export const Form = styled.form`
   align-items: flex-end;
   gap: 4px;
   min-width: 360px;
-  /* margin-top: 100px; */
-  /* margin-left: auto;
-  margin-right: auto; */
   padding: 8px 0;
   margin: 0 auto;
   @media screen and (min-width: 800px) {
     width: 800px;
-    /* margin-top: 60px; */
   }
 `;
 export const MarkField = styled.label`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 4px;
-  font-size: 12px;
-  font-weight: 500;
-  color: #7e57c2;
   padding: 0;
   margin: 0;
 `;
@@ -38,6 +30,11 @@ export const ContactName = styled.input`
   border: 1px solid #7e57c2;
   color: #673ab7;
   padding: 0 8px;
+  &::placeholder {
+    font-size: 12px;
+    font-weight: 500;
+    color: #7e57c2;
+  }
   &:hover,
   :focus {
     background-color: #b39ddb;
@@ -62,6 +59,11 @@ export const ContactNumber = styled.input`
   border: 1px solid #7e57c2;
   padding: 0 8px;
   cursor: pointer;
+  &::placeholder {
+    font-size: 12px;
+    font-weight: 500;
+    color: #7e57c2;
+  }
   &:hover,
   :focus {
     background-color: #b39ddb;
