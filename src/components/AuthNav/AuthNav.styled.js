@@ -16,7 +16,12 @@ export const WrapAuthNaw = styled.div`
     color: white;
     text-decoration: none;
     transition: all 0.3s;
+    cursor: pointer;
     &.active {
+      color: #0091ea;
+    }
+    &:hover,
+    :focus {
       color: #0091ea;
     }
   }
@@ -28,7 +33,12 @@ export const WrapAuthNaw = styled.div`
     color: white;
     text-decoration: none;
     transition: all 0.3s;
+    cursor: pointer;
     &.active {
+      color: #64dd17;
+    }
+    &:hover,
+    :focus {
       color: #64dd17;
     }
   }
