@@ -27,7 +27,7 @@ export default function ContactList() {
   return (
     <Wrap>
       {isLoading && <Loading />}
-      {error && <ErrorMessage message={error.message} />}
+      {error && <ErrorMessage message={'Not found'} />}
       {showArr ? (
         arrContacts.map(contact => {
           return <Contact contact={contact} key={nanoid()} />;
