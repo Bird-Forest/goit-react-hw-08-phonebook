@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.e6c13ad2.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.eefb2c81.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.e04da180.js",
     "static/js/451.cc0cb768.chunk.js": "/goit-react-hw-08-phonebook/static/js/451.cc0cb768.chunk.js",
-    "static/js/196.9aa174c6.chunk.js": "/goit-react-hw-08-phonebook/static/js/196.9aa174c6.chunk.js",
+    "static/js/938.1459dd69.chunk.js": "/goit-react-hw-08-phonebook/static/js/938.1459dd69.chunk.js",
     "static/js/901.779d6d9f.chunk.js": "/goit-react-hw-08-phonebook/static/js/901.779d6d9f.chunk.js",
     "static/js/622.9da645c5.chunk.js": "/goit-react-hw-08-phonebook/static/js/622.9da645c5.chunk.js",
     "static/js/860.260c6bb0.chunk.js": "/goit-react-hw-08-phonebook/static/js/860.260c6bb0.chunk.js",
     "static/media/hends.jpg": "/goit-react-hw-08-phonebook/static/media/hends.510553930ee411343c99.jpg",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.e6c13ad2.css.map": "/goit-react-hw-08-phonebook/static/css/main.e6c13ad2.css.map",
-    "main.eefb2c81.js.map": "/goit-react-hw-08-phonebook/static/js/main.eefb2c81.js.map",
+    "main.e04da180.js.map": "/goit-react-hw-08-phonebook/static/js/main.e04da180.js.map",
     "451.cc0cb768.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/451.cc0cb768.chunk.js.map",
-    "196.9aa174c6.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/196.9aa174c6.chunk.js.map",
+    "938.1459dd69.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/938.1459dd69.chunk.js.map",
     "901.779d6d9f.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/901.779d6d9f.chunk.js.map",
     "622.9da645c5.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/622.9da645c5.chunk.js.map",
     "860.260c6bb0.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/860.260c6bb0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.eefb2c81.js"
+    "static/js/main.e04da180.js"
   ]
 }
